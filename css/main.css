@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Noto+Sans+KR&family=Style+Script&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+    height: auto;
+}
+
+
+
+/* ============================================= */
+/* Header + Nav */
+header {
+    z-index: 100;
+    top: 0;
+    position: sticky;
+    box-shadow: 0 2px 2px -2px rgba(15, 180, 209, 0.3);
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px;
+}
+
+
+.logo {
+    width: 120px;
+    height: 63px;
+    cursor: pointer;
+}
+
+.nav_links {
+    list-style: none;
+
+}
+
+.nav_links li {
+    margin: 8px;
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+}
+
+/*
+.nav_links li .home{
+    color: rgba(15, 180, 209);
+}
+*/
+
+.nav_links li a {
+    text-decoration: none;
+    color: gray;
+    transition: all 0.3s ease 0s;
+}
+
+
+.nav_links li a:hover {
+    color: rgba(15, 180, 209);
+}
+
+.nav_links li a button {
+    padding: 6px 15px;
+    background-color: rgba(15, 180, 209, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.nav_links li a button:hover {
+    background-color: rgba(15, 180, 209, 0.8);
+}
+
+.toggle_btn {
+    position: absolute;
+    right: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle_btn .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+/*================================================================================*/
+.home {
+    margin-top: 7px;
+}
+
+.main_section {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.main_section .top_img img {
+    width: 100%;
+    height: 562px;
+    background-size: cover;
+}
+
+
+
+.main_section .small_imgs {
+    display: flex;
+    flex-direction: row;
+    margin: 7px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main_section .small_imgs>div {
+    width: 16%;
+    height: 100%;
+}
+
+.main_section .small_imgs img {
+    width: 100%;
+    height: 100%;
+}
+
+/*.main_section hr {
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+    background-color: rgba(25, 106, 121, 0.5);
+    border: 0px;
+    border-radius:7px ;
+}*/
+/*=============================================*/
+.about_section {
+    width: 100%;
+    height: 700px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    background-color: pink;
+    border-radius: 25px;
+
+}
+
+.about_section .about_header {
+    min-height: 25%;
+    position: relative;
+}
+
+.about_section .about_header h1 {
+    text-align: center;
+    width: 100%;
+    height: auto;
+    font-size: 64px;
+    font-family: 'Style Script';
+    letter-spacing: 3px;
+    position: relative;
+    top: 50px;
+    margin: auto;
+}
+/*========*/
+.about_content {
+    background-color: coral;
+    padding: 6px;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-radius: 25px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin: 5px;
+
+}
+
+.about_content h2 {
+    min-height: 120px;
+    font-size: 27px;
+    margin: 5px;
+    font-family: 'Noto Sans KR', sans-serif;
+    text-transform: uppercase;
+}
+.about_content .para{
+    overflow: hidden;
+    min-height: 200px;
+    max-height: 350px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.about_content p {
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.about_content button {
+    width: 85px;
+    height: 30px;
+    margin: 7px 7px;
+    text-transform: capitalize;
+    padding: 6px 15px;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: rgba(15, 180, 209, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+
+.about_content button:hover {
+    background-color: rgba(15, 180, 209, 0.8);
+}
+
+/* ============================================================*/
+/*=============== portfolio ===================================*/
+.portfolio_content{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #b4d1d6 ;
+    border-radius: 25px;
+}
+
+.portfolio_content h2 {
+    width: 20%;
+    height: 10%;
+    padding: 5px;
+    font-size: 32px;
+    text-align: center;
+    
+}
+.portfolio_content > div {
+    width: 75%;
+    height: 90%;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.portfolio_content img {
+    width: 30%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*================================================================*/
+@media (max-width: 769px) {
+    .toggle_btn {
+        display: flex;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    /* =========================*/
+
+    .main_section {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+
+    }
+
+    .main_section .top_img {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .main_section .top_img img {
+        width: 100%;
+        height: 300px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.6);
+        border-radius: 25px;
+
+    }
+
+
+    .main_section .small_imgs {
+        display: none;
+    }
+
+    /* ============ About us ===================*/
+    .about_section {
+        width: 100%;
+        height: 500px;
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        background-color: pink;
+        border-radius: 25px;
+    
+    }
+    
+    .about_section .about_header {
+        min-height: 25%;
+        position: relative;
+    }
+    
+    .about_section .about_header h1 {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        font-size: 48px;
+        font-family: 'Style Script';
+        letter-spacing: 3px;
+        position: relative;
+        top: 30px;
+        margin: auto;
+    }
+    /*========*/
+    .about_content {
+        background-color: coral;
+        width: 100%;
+        height: 75%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        border-radius: 25px;
+    }
+    
+    .box {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin: 5px;
+    
+    }
+    
+    .about_content h2 {
+        min-height: 70px;
+        font-size: 15px;
+        font-family: 'Noto Sans KR', sans-serif;
+        text-transform: uppercase;
+    }
+    .about_content .para{
+        overflow: hidden;
+        min-height: 200px;
+        max-height: 350px;
+      
+    }
+    
+    .about_content p {
+        font-size: 12px;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 300;
+        line-height: 18px;
+    }
+    
+    .about_content button {
+        width: 70px;
+        height: 30px;
+        text-transform: capitalize;
+        font-family: 'Noto Sans KR', sans-serif;
+        background-color: rgba(15, 180, 209, 1);
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+    
+    
+    .about_content button:hover {
+        background-color: rgba(15, 180, 209, 0.8);
+    }
+
+}
+
+/*======================================*/
+@media (max-width: 481px) {
+    .toggle_btn {
+        display: flex;
+    }
+
+    .nav_links {
+        display: none;
+    }
+
+    /* ==========MAin Section===============*/
+
+    .main_section {
+        width: 100%;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main_section .top_img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main_section .top_img img {
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+
+    .main_section .small_imgs {
+        display: none;
+
+    }
+    /* ============ About us ===================*/
+
+}
